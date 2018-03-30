@@ -26,16 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        UID();
 
-
-
-
-        email = findViewById(R.id.your_email_address);
-        pass = findViewById(R.id.create_new_password);
-
-
-
-        mRegistration = findViewById(R.id.registration);
         mRegistration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mSignIn = findViewById(R.id.signin);
         mSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,5 +57,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public  void UID () {
+
+        email = findViewById(R.id.your_email_address);
+        pass = findViewById(R.id.create_new_password);
+        mRegistration = findViewById(R.id.registration);
+        mSignIn = findViewById(R.id.signin);
+
+    }
+
+    public void SP (){
+
     }
 }
