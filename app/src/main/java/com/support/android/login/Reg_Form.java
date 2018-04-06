@@ -32,13 +32,13 @@ public class Reg_Form extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration_form);
 
-        usernameEditText = findViewById(R.id.your_full_name);
-        passwordEditText = findViewById(R.id.create_new_password);
-        phoneEditText = findViewById(R.id.create_new_number);
-        emailEditText = findViewById(R.id.your_email_address);
+        usernameEditText = findViewById(R.id.ET_user_name);
+        passwordEditText = findViewById(R.id.ET_password);
+        phoneEditText = findViewById(R.id.ET_number);
+        emailEditText = findViewById(R.id.ET_email_address);
 
 
-        mSignUp = findViewById(R.id.signup);
+        mSignUp = findViewById(R.id.B_registration);
         mSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +54,8 @@ public class Reg_Form extends AppCompatActivity {
                 editor.putString("phone", phone );
                 editor.putString("email", email );
                 editor.apply();
-                finish();
+
+                // finish();
             }
         });
     }

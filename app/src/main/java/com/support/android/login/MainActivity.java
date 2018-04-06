@@ -23,19 +23,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        //setContentView(R.layout.activity_main);
+        Intent intent = new Intent(getApplicationContext(),Reg_Form.class);
+        startActivity(intent);
 
         UID();
 
-        mRegistration.setOnClickListener(new View.OnClickListener() {
+/*        mRegistration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),Reg_Form.class);
                 startActivity(intent);
             }
         });
-
         mSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+*/
     }
 
     public  void UID () {
