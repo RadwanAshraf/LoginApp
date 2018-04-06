@@ -121,12 +121,13 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:layout_marginTop="10dp">
+
         <EditText
             android:id="@+id/ET_number"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Phone Number"
+            android:hint="@string/phone_number"
             android:drawableRight="@drawable/ic_local_phone_black_24dp"
             android:inputType="phone" />
     </android.support.design.widget.TextInputLayout>

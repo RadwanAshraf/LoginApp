@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Login</string>
     <string name="title_activity_registration__form">Registration_Form</string>
+    <string name="phone_number">Phone Number</string>
 </resources>
